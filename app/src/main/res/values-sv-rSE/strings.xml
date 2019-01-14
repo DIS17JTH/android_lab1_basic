@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lab_1_Att_Göra_App_1</string>
+    <string name="t_select_one">Välj en</string>
+    <string name="t_create">Skapa</string>
+    <string name="t_delete_one">Ta Bort En</string>
+</resources>

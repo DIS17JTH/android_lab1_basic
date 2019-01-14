@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lab_1_ToDo_App_1</string>
+    <string name="t_select_one">Select one</string>
+    <string name="t_create">Create</string>
+    <string name="t_delete_one">Delete one</string>
+</resources>
