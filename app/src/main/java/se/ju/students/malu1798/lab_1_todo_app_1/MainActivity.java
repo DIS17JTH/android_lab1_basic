@@ -18,4 +18,16 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CreateActivity.class);
         startActivity(intent);
     }
+
+    public void pickOneButtonClicked(View view){
+        System.out.print("Button Pick one clicked");
+        Intent intent = new Intent(this, PickTodoActivity.class);
+        startActivity(intent);
+    }
+
+    public void deleteOneButtonClicked(View view){
+        System.out.print("Button Delete One clicked");
+        Intent intent = new Intent(this, PickTodoActivity.class);
+        startActivity(intent);
+    }
 }

@@ -5,4 +5,5 @@
     <string name="t_create">Skapa</string>
     <string name="t_delete_one">Ta Bort En</string>
     <string name="t_create_one">Skapa en</string>
+    <string name="t_youre_note">Din Anteckning</string>
 </resources>
