@@ -13,7 +13,7 @@ public class PickTodoActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pick_todo);
-        ListView listView = (ListView) findViewById(R.id.listView);
+        final ListView listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(new ArrayAdapter<Data.Todo>(
             this,
             android.R.layout.simple_list_item_1,
@@ -39,6 +39,7 @@ public class PickTodoActivity extends AppCompatActivity {
                     intent.putExtra("todoIndex", position);
                     intent.putExtra("test", "This is a test");
                     startActivity(intent);
+                    //listView.deferNotifyDataSetChanged();
                     finish();
                 }
             }
