@@ -6,4 +6,5 @@
     <string name="t_delete_one">Ta Bort En</string>
     <string name="t_create_one">Skapa en</string>
     <string name="t_youre_note">Din Anteckning</string>
+    <string name="t_delete_this_one">Ta Bort den här</string>
 </resources>

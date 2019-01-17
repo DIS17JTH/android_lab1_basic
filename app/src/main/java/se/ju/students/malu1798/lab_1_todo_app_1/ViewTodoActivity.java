@@ -18,6 +18,6 @@ public class ViewTodoActivity extends AppCompatActivity {
         int i = intent.getIntExtra("todoIndex", 0);
         System.out.println("------------------------ " + s);
         TextView textView = (TextView) findViewById(R.id.textView2);
-        textView.setText("ToDo: " + s + i);
+        textView.setText(Data.todos.get(i).title);
     }
 }

@@ -17,4 +17,8 @@ public class Data extends AppCompatActivity {
         @Override
         public String toString() {return "Todo: "+ title;}
     }
+
+    public static void deleteTodo(int i){
+        todos.remove(i);
+    }
 }

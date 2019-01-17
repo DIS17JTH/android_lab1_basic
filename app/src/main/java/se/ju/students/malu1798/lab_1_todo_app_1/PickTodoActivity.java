@@ -9,8 +9,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import java.lang.reflect.Array;
-
 public class PickTodoActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -25,14 +23,24 @@ public class PickTodoActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-                Intent intent = new Intent(PickTodoActivity.this, ViewTodoActivity.class);
-                intent.putExtra("todoIndex", position);
-                intent.putExtra("test", "This is a test");
-                System.out.println("!!!!!!!!!!!!!!!!!!" + position);
-                startActivity(intent);
+                Intent intentIN = getIntent();
+                int i = intentIN.getIntExtra("button", 0);
 
-                //Data.Todo clickedTodo = Data.todos.get(position);
+                if(i == 0) {
+                    Intent intent = new Intent(PickTodoActivity.this, ViewTodoActivity.class);
+                    intent.putExtra("todoIndex", position);
+                    intent.putExtra("test", "This is a test");
+                    System.out.println("!!!!!!!!!!!!!!!!!!" + id);
+                    startActivity(intent);
 
+                    //Data.Todo clickedTodo = Data.todos.get(position);
+                }else {
+                    Intent intent = new Intent(PickTodoActivity.this, DeleteTodoActivity.class);
+                    intent.putExtra("todoIndex", position);
+                    intent.putExtra("test", "This is a test");
+                    startActivity(intent);
+                    finish();
+                }
             }
         });
     }
